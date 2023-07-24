@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         print("5678")
         print("안녕안녕")
         print("커밋과 동시에 푸쉬하기")
+        print("리드미 썼다 쀼듯")
         
     }
 
