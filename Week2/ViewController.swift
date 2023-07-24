@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         print("5678")
         print("안녕안녕")
-        
+        print("커밋과 동시에 푸쉬하기")
         
     }
 
