@@ -13,6 +13,7 @@
 		D63E0BCF2A6E046600D0DD05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BCD2A6E046600D0DD05 /* Main.storyboard */; };
 		D63E0BD12A6E046700D0DD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BD02A6E046700D0DD05 /* Assets.xcassets */; };
 		D63E0BD42A6E046700D0DD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BD22A6E046700D0DD05 /* LaunchScreen.storyboard */; };
+		D63E0BDC2A6E069400D0DD05 /* CommitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D63E0BD02A6E046700D0DD05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63E0BD32A6E046700D0DD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D63E0BD52A6E046700D0DD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D63E0BC72A6E046600D0DD05 /* AppDelegate.swift */,
 				D63E0BC92A6E046600D0DD05 /* SceneDelegate.swift */,
 				D63E0BCB2A6E046600D0DD05 /* ViewController.swift */,
+				D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */,
 				D63E0BCD2A6E046600D0DD05 /* Main.storyboard */,
 				D63E0BD02A6E046700D0DD05 /* Assets.xcassets */,
 				D63E0BD22A6E046700D0DD05 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63E0BCC2A6E046600D0DD05 /* ViewController.swift in Sources */,
+				D63E0BDC2A6E069400D0DD05 /* CommitViewController.swift in Sources */,
 				D63E0BC82A6E046600D0DD05 /* AppDelegate.swift in Sources */,
 				D63E0BCA2A6E046600D0DD05 /* SceneDelegate.swift in Sources */,
 			);
