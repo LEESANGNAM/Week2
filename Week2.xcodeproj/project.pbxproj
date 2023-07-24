@@ -14,6 +14,7 @@
 		D63E0BD12A6E046700D0DD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BD02A6E046700D0DD05 /* Assets.xcassets */; };
 		D63E0BD42A6E046700D0DD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63E0BD22A6E046700D0DD05 /* LaunchScreen.storyboard */; };
 		D63E0BDC2A6E069400D0DD05 /* CommitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */; };
+		D63E0BDE2A6E3E9200D0DD05 /* TrandtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E0BDD2A6E3E9200D0DD05 /* TrandtionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D63E0BD32A6E046700D0DD05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D63E0BD52A6E046700D0DD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitViewController.swift; sourceTree = "<group>"; };
+		D63E0BDD2A6E3E9200D0DD05 /* TrandtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrandtionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D63E0BD02A6E046700D0DD05 /* Assets.xcassets */,
 				D63E0BD22A6E046700D0DD05 /* LaunchScreen.storyboard */,
 				D63E0BD52A6E046700D0DD05 /* Info.plist */,
+				D63E0BDD2A6E3E9200D0DD05 /* TrandtionViewController.swift */,
 			);
 			path = Week2;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				D63E0BCC2A6E046600D0DD05 /* ViewController.swift in Sources */,
 				D63E0BDC2A6E069400D0DD05 /* CommitViewController.swift in Sources */,
 				D63E0BC82A6E046600D0DD05 /* AppDelegate.swift in Sources */,
+				D63E0BDE2A6E3E9200D0DD05 /* TrandtionViewController.swift in Sources */,
 				D63E0BCA2A6E046600D0DD05 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
