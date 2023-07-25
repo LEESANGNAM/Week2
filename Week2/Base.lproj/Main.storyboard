@@ -130,7 +130,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="2wF-4j-z28"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 010-000-0000, www.naver.com Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 010-000-0000, www.naver.com Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -185,23 +185,78 @@
             </objects>
             <point key="canvasLocation" x="323" y="-75"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="vlE-vS-1sS">
+            <objects>
+                <viewController id="zzG-t8-Ohq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MH4-5y-m3f">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-lL-FQ2" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="59" width="393" height="340.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="testestestestestestset" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sae-bL-twF" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="20" y="419.66666666666669" width="353" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FWS-wi-k4F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" systemColor="systemGrayColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" systemColor="systemYellowColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" systemColor="systemGreenColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cxi-4t-acM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3ES-lL-FQ2" firstAttribute="top" secondItem="Cxi-4t-acM" secondAttribute="top" id="6IF-WS-wh6"/>
+                            <constraint firstItem="Sae-bL-twF" firstAttribute="top" secondItem="3ES-lL-FQ2" secondAttribute="bottom" constant="20" id="DpV-RL-Qj2"/>
+                            <constraint firstItem="3ES-lL-FQ2" firstAttribute="height" secondItem="MH4-5y-m3f" secondAttribute="height" multiplier="0.4" id="Jyl-mc-Z2q"/>
+                            <constraint firstItem="Sae-bL-twF" firstAttribute="leading" secondItem="Cxi-4t-acM" secondAttribute="leading" constant="20" id="afy-CI-KBN"/>
+                            <constraint firstItem="Cxi-4t-acM" firstAttribute="trailing" secondItem="3ES-lL-FQ2" secondAttribute="trailing" id="dIU-UU-W1J"/>
+                            <constraint firstItem="3ES-lL-FQ2" firstAttribute="leading" secondItem="Cxi-4t-acM" secondAttribute="leading" id="fHZ-1m-9ZK"/>
+                            <constraint firstItem="Cxi-4t-acM" firstAttribute="trailing" secondItem="Sae-bL-twF" secondAttribute="trailing" constant="20" id="ifU-LA-CZf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="3rF-EO-OvU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pK9-OB-8zP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="-77"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K1P-Em-pun">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="uzB-PD-LZ9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4FA-qj-3J8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4L3-zh-c2U"/>
                         <segue destination="FG6-gg-s21" kind="relationship" relationship="viewControllers" id="iRx-Gb-e70"/>
+                        <segue destination="zzG-t8-Ohq" kind="relationship" relationship="viewControllers" id="Ol1-Bd-eMU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xME-H6-V49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-143" y="-763"/>
+            <point key="canvasLocation" x="291" y="-1012"/>
         </scene>
         <!--Item-->
         <scene sceneID="UZV-MT-HhE">
@@ -217,6 +272,9 @@
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="FG6-gg-s21" eventType="valueChanged" id="gIS-fX-hMe"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="maZ-xV-MeY">
                                 <rect key="frame" x="20" y="130" width="353" height="34"/>
@@ -241,6 +299,9 @@
                                     <segue destination="eZS-k5-T49" kind="showDetail" id="Z5U-jG-eEY"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dst-5T-Fd5">
+                                <rect key="frame" x="78.666666666666671" y="426" width="235.66666666666663" height="170.33333333333337"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FNR-OD-0sE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -248,12 +309,17 @@
                             <constraint firstItem="maZ-xV-MeY" firstAttribute="leading" secondItem="FNR-OD-0sE" secondAttribute="leading" constant="20" id="D6z-Re-m1x"/>
                             <constraint firstItem="0JI-4B-E4n" firstAttribute="centerX" secondItem="FNR-OD-0sE" secondAttribute="centerX" id="DGO-xD-Ufz"/>
                             <constraint firstItem="maZ-xV-MeY" firstAttribute="top" secondItem="0JI-4B-E4n" secondAttribute="bottom" constant="20" id="HO5-u1-IIP"/>
+                            <constraint firstItem="dst-5T-Fd5" firstAttribute="height" secondItem="mPY-Bg-r8q" secondAttribute="height" multiplier="0.2" id="LKv-nN-rTa"/>
+                            <constraint firstItem="dst-5T-Fd5" firstAttribute="centerY" secondItem="mPY-Bg-r8q" secondAttribute="centerY" multiplier="1.2" id="aN1-Cr-CI4"/>
                             <constraint firstItem="FNR-OD-0sE" firstAttribute="trailing" secondItem="maZ-xV-MeY" secondAttribute="trailing" constant="20" id="gID-BR-1f9"/>
                             <constraint firstItem="0JI-4B-E4n" firstAttribute="top" secondItem="FNR-OD-0sE" secondAttribute="top" constant="20" id="m6o-lt-m0i"/>
+                            <constraint firstItem="dst-5T-Fd5" firstAttribute="width" secondItem="mPY-Bg-r8q" secondAttribute="width" multiplier="0.6" id="qet-ip-ima"/>
+                            <constraint firstItem="dst-5T-Fd5" firstAttribute="centerX" secondItem="mPY-Bg-r8q" secondAttribute="centerX" id="y6X-ui-G75"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="bnU-iu-DCy"/>
                     <connections>
+                        <outlet property="actorImageView" destination="dst-5T-Fd5" id="sUb-gi-yW4"/>
                         <outlet property="segmentedControl" destination="0JI-4B-E4n" id="avD-uU-TDZ"/>
                         <outlet property="userTextField" destination="maZ-xV-MeY" id="iof-kY-fwz"/>
                     </connections>
@@ -305,11 +371,20 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
