@@ -16,8 +16,6 @@ class TrandtionViewController: UIViewController {
     
     @IBOutlet weak var userTextField: UITextField!
     
-    let actor = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +29,12 @@ class TrandtionViewController: UIViewController {
     }
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
         
-        if sender.selectedSegmentIndex == actor{
+        if sender.selectedSegmentIndex == Actor.man.rawValue{
             // http( apple block) - app Transport Secutity Setting
             setUpImage(urlString:  "https://image.newsis.com/2023/05/04/NISI20230504_0001258444_web.jpg")
            
             
-        }else if sender.selectedSegmentIndex == 1{
+        }else if sender.selectedSegmentIndex == Actor.woman.rawValue{
             setUpImage(urlString:  "https://i.namu.wiki/i/KHZxgx6dilwr4Z7uu6wSPoVlf5aIb6rq6qIOBV2LYBYdN9cWFaLlvkggojNNTD6mrwtGxS_lTPh4Woge2hzuZQ.webp")
 
         }else{

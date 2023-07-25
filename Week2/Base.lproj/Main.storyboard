@@ -185,20 +185,20 @@
             </objects>
             <point key="canvasLocation" x="323" y="-75"/>
         </scene>
-        <!--Item-->
+        <!--Calender View Controller-->
         <scene sceneID="vlE-vS-1sS">
             <objects>
-                <viewController id="zzG-t8-Ohq" sceneMemberID="viewController">
+                <viewController id="zzG-t8-Ohq" customClass="CalenderViewController" customModule="Week2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MH4-5y-m3f">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-lL-FQ2" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="59" width="393" height="340.66666666666669"/>
+                                <rect key="frame" x="0.0" y="103.00000000000003" width="393" height="340.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="testestestestestestset" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sae-bL-twF" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="20" y="419.66666666666669" width="353" height="50"/>
+                                <rect key="frame" x="20" y="463.66666666666669" width="353" height="50.000000000000057"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FWS-wi-k4F"/>
                                 </constraints>
@@ -219,6 +219,51 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lF-yo-Ckx">
+                                <rect key="frame" x="54" y="587" width="71" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="show"/>
+                                <connections>
+                                    <segue destination="tYa-WS-mGj" kind="show" id="AhY-5K-jUO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcn-Up-UGo">
+                                <rect key="frame" x="54" y="630" width="155" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="modal automatic"/>
+                                <connections>
+                                    <segue destination="tYa-WS-mGj" kind="presentation" modalPresentationStyle="automatic" id="gQd-bC-v8T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-Xs-JdD">
+                                <rect key="frame" x="54" y="673" width="155" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="modal FullScreen"/>
+                                <connections>
+                                    <segue destination="tYa-WS-mGj" kind="presentation" modalPresentationStyle="fullScreen" id="jTi-ey-C14"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5B-vl-r3p">
+                                <rect key="frame" x="138" y="587" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="show detail"/>
+                                <connections>
+                                    <segue destination="tYa-WS-mGj" kind="showDetail" id="XSO-at-lfJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVP-TM-dIG">
+                                <rect key="frame" x="36" y="716" width="192" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="modal current context"/>
+                                <connections>
+                                    <segue destination="tYa-WS-mGj" kind="presentation" modalPresentationStyle="currentContext" id="zer-i8-rdN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cxi-4t-acM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -232,11 +277,45 @@
                             <constraint firstItem="Cxi-4t-acM" firstAttribute="trailing" secondItem="Sae-bL-twF" secondAttribute="trailing" constant="20" id="ifU-LA-CZf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="3rF-EO-OvU"/>
+                    <navigationItem key="navigationItem" id="dzc-Jf-b2g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pK9-OB-8zP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="-77"/>
+            <point key="canvasLocation" x="2159.5419847328244" y="-63.380281690140848"/>
+        </scene>
+        <!--Life Cycle View Controller-->
+        <scene sceneID="6TT-5a-byt">
+            <objects>
+                <viewController id="tYa-WS-mGj" customClass="LifeCycleViewController" customModule="Week2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2B7-af-5P5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-uf-QLh">
+                                <rect key="frame" x="76" y="323" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vto-cR-BlT">
+                                <rect key="frame" x="44" y="74" width="45" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                <connections>
+                                    <segue destination="aKC-aZ-CDJ" kind="unwind" unwindAction="unwindToCalender:" id="1tL-I6-f15"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xS6-5r-1eo"/>
+                        <color key="backgroundColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="0.59212024006622521" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TVh-jA-mTS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1G-RX-S2R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="aKC-aZ-CDJ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2160" y="720"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="K1P-Em-pun">
@@ -251,7 +330,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="4L3-zh-c2U"/>
                         <segue destination="FG6-gg-s21" kind="relationship" relationship="viewControllers" id="iRx-Gb-e70"/>
-                        <segue destination="zzG-t8-Ohq" kind="relationship" relationship="viewControllers" id="Ol1-Bd-eMU"/>
+                        <segue destination="KPj-K2-WIX" kind="relationship" relationship="viewControllers" id="Ol1-Bd-eMU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xME-H6-V49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -360,9 +439,29 @@
             </objects>
             <point key="canvasLocation" x="-596.18320610687022" y="619.71830985915494"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="piH-Bj-PXx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KPj-K2-WIX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3rF-EO-OvU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nuo-Ql-iDV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zzG-t8-Ohq" kind="relationship" relationship="rootViewController" id="wKn-CD-rjE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBQ-Xb-nXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232.824427480916" y="-63.380281690140848"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Z5U-jG-eEY"/>
+        <segue reference="zer-i8-rdN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
@@ -370,6 +469,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -379,6 +481,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

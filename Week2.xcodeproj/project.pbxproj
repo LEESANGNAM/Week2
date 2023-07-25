@@ -19,6 +19,9 @@
 		D647B7C12A6F5ACD007C4BC2 /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = D647B7C02A6F5ACD007C4BC2 /* TextFieldEffects */; };
 		D647B7C42A6F5B10007C4BC2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D647B7C32A6F5B10007C4BC2 /* IQKeyboardManagerSwift */; };
 		D647B7C72A6F5B30007C4BC2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D647B7C62A6F5B30007C4BC2 /* Kingfisher */; };
+		D647B7C92A6F935A007C4BC2 /* ActorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B7C82A6F935A007C4BC2 /* ActorEnum.swift */; };
+		D647B7CB2A6F98E5007C4BC2 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B7CA2A6F98E5007C4BC2 /* CalenderViewController.swift */; };
+		D647B7CD2A6FA25E007C4BC2 /* LifeCycleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D647B7CC2A6FA25E007C4BC2 /* LifeCycleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		D63E0BD52A6E046700D0DD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitViewController.swift; sourceTree = "<group>"; };
 		D63E0BDD2A6E3E9200D0DD05 /* TrandtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrandtionViewController.swift; sourceTree = "<group>"; };
+		D647B7C82A6F935A007C4BC2 /* ActorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorEnum.swift; sourceTree = "<group>"; };
+		D647B7CA2A6F98E5007C4BC2 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
+		D647B7CC2A6FA25E007C4BC2 /* LifeCycleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +79,13 @@
 				D63E0BCB2A6E046600D0DD05 /* ViewController.swift */,
 				D63E0BDB2A6E069400D0DD05 /* CommitViewController.swift */,
 				D63E0BCD2A6E046600D0DD05 /* Main.storyboard */,
+				D647B7CA2A6F98E5007C4BC2 /* CalenderViewController.swift */,
 				D63E0BD02A6E046700D0DD05 /* Assets.xcassets */,
 				D63E0BD22A6E046700D0DD05 /* LaunchScreen.storyboard */,
 				D63E0BD52A6E046700D0DD05 /* Info.plist */,
 				D63E0BDD2A6E3E9200D0DD05 /* TrandtionViewController.swift */,
+				D647B7C82A6F935A007C4BC2 /* ActorEnum.swift */,
+				D647B7CC2A6FA25E007C4BC2 /* LifeCycleViewController.swift */,
 			);
 			path = Week2;
 			sourceTree = "<group>";
@@ -168,7 +177,10 @@
 				D63E0BDC2A6E069400D0DD05 /* CommitViewController.swift in Sources */,
 				D63E0BC82A6E046600D0DD05 /* AppDelegate.swift in Sources */,
 				D63E0BDE2A6E3E9200D0DD05 /* TrandtionViewController.swift in Sources */,
+				D647B7CB2A6F98E5007C4BC2 /* CalenderViewController.swift in Sources */,
+				D647B7C92A6F935A007C4BC2 /* ActorEnum.swift in Sources */,
 				D63E0BCA2A6E046600D0DD05 /* SceneDelegate.swift in Sources */,
+				D647B7CD2A6FA25E007C4BC2 /* LifeCycleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
