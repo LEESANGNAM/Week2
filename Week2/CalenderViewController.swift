@@ -47,7 +47,7 @@ class CalenderViewController: UIViewController {
      */
     
     @IBAction func unwindToCalender(_ segue: UIStoryboardSegue){
-        
+        dismiss(animated: true)
     }
     
 }
